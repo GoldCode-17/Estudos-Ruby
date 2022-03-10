@@ -2,7 +2,6 @@ def binary_search(lista, item, comeco, fim)
   meio = lista.count / 2
   if item == meio
 
-
   end
 end
 
