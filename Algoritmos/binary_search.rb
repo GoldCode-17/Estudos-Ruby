@@ -1,22 +1,26 @@
+# frozen_string_literal: true
+
 def binary_search(lista, item, comeco, fim)
   if comeco <= fim
     meio = (comeco + fim) / 2
     if lista[meio] == item
-      puts meio
+      meio
+    elsif item > lista[meio]
+      binary_search(lista, item, meio + 1, fim)
     else
-      if item > meio
-        binary_search(lista, item, meio + 1, fim)
-      else
-        binary_search(lista, item, comeco, fim - 1)
-      end
+      binary_search(lista, item, comeco, meio - 1)
     end
   else
-    puts -1
+    -1
   end
 end
 
-arr = [2, 3, 4, 10, 40]
-valor = 40
+array = [2, 3, 4, 10, 40]
+valor = 3
 
-binary_search(arr, valor, 0, 4)
-
+resultado = binary_search(array, valor, 0, 4)
+if resultado == -1
+  puts 'O elemento não está presente no array'
+else
+  puts "O elemento está presente no índice #{resultado}"
+end
