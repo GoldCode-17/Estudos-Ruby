@@ -16,3 +16,4 @@ if resultado == -1
 else
   puts "o elemento x está presente no índice #{resultado}"
 end
+
