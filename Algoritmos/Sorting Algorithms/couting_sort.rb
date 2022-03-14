@@ -9,9 +9,13 @@ def couting_sort(entrada)
   end
 
   #somando cada elemento do contador com o anterior para achar a localização dentro do array de saída
+  n = contador.count
   contador.each_index do |i|
-
+    contador[i] = contador[i] + contador[i - 1] if i > 0
   end
+
+  #ordenando os elementos na lista saída a partir da lista contador
+
 
   return contador
 end
