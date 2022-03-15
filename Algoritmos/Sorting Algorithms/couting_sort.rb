@@ -14,10 +14,18 @@ def couting_sort(entrada)
     contador[i] = contador[i] + contador[i - 1] if i > 0
   end
 
-  #ordenando os elementos na lista saída a partir da lista contador
+  #ordenando os elementos na lista de saída a partir da lista contador
+  saida = Array.new(9 + 1) { |n| 0 }
+  qtd = entrada.count
+  qtd -= 1
+  qtd.downto(0) do |i|
+    j = contador[entrada[i]]
+    saida[j] = contador[entrada[i]]
+    contador[entrada[i]] -= 1
+  end
 
 
-  return contador
+  return saida
 end
 
 array = [2, 5, 3, 0, 2, 3, 0, 5, 3, 0]
