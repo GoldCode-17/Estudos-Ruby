@@ -20,7 +20,7 @@ def couting_sort(entrada)
   qtd -= 1
   qtd.downto(0) do |i|
     j = contador[entrada[i]]
-    saida[j] = contador[entrada[i]]
+    saida[j - 1] = j
     contador[entrada[i]] -= 1
   end
 
