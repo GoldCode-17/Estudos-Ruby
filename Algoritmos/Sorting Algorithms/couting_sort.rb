@@ -15,18 +15,17 @@ def couting_sort(entrada)
   end
 
   #ordenando os elementos na lista de saída a partir da lista contador
-  saida = Array.new(9 + 1) { |n| 0 }
+  saida = Array.new(10)
   qtd = entrada.count
   qtd -= 1
   qtd.downto(0) do |i|
     j = contador[entrada[i]]
-    saida[j - 1] = j
+    saida[j - 1] = entrada[i]
     contador[entrada[i]] -= 1
   end
-
 
   return saida
 end
 
 array = [2, 5, 3, 0, 2, 3, 0, 5, 3, 0]
-print couting_sort(array)
+print "A matriz de elementos ordenada é:\n#{couting_sort(array)}"
