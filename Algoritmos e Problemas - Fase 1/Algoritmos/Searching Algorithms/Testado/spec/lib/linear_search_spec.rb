@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'linear_search'
 
 RSpec.describe "linear_search" do
   it 'O elemento 110 está presente no índice 6' do
