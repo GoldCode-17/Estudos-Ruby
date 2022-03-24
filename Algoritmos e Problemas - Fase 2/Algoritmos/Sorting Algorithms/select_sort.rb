@@ -13,3 +13,5 @@ end
 lista = [7, 5, 1, 8, 3]
 
 print selection_sort(lista)
+
+# teste
