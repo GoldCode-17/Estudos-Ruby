@@ -16,3 +16,4 @@ print selection_sort(lista)
 
 # teste
 # teste
+# teste
