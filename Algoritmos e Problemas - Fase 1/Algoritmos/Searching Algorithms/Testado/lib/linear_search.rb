@@ -5,14 +5,20 @@ class LinearSearch
   end
 
   def call
-    resultado = @array.each do |i|
+    @array.each do |i|
       return @array.index(i) if @position == i
     end
+    return -1
 
-    if resultado == -1
-      puts "O elmento x não está presente em arr[]."
-    else
-      puts "o elemento x está presente no índice #{resultado}"
-    end
   end
 end
+
+
+# service = LinearSearch.new(array: [2, 4, 7, 2, 5, 6], position: 4)
+#resultado = service.call
+#
+#if resultado == -1
+#  puts "O elmento x não está presente em arr[]."
+#else
+#  puts "O elemento x está presente no índice #{resultado}"
+#end
