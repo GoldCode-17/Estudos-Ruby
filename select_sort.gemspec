@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["marcoaspeixoto@gmail.com"]
 
   spec.summary       = %q{Ordenação de números em um array}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/marcoaspeixoto/Estudos-Ruby"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 

@@ -1,4 +1,4 @@
-require "select_sort/version"
+require 'select_sort/version'
 
 module SelectSort
   class Error < StandardError; end
